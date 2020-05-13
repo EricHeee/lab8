@@ -26,3 +26,17 @@ def isPrime(n):
             return False
         i += 1
     return True
+
+
+def n_prime(n):
+    prime_list = []
+    
+    # Add all prime numbers less than 10000 to prime_list
+    for i in range(10000):
+        if isPrime(i) == True:
+            prime_list.append(i)
+            i += 1
+    
+    #return the nth prime number
+    x = prime_list[n-1]
+    return x
